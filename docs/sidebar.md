@@ -1,6 +1,7 @@
 - [Getting Started](/)
 **FTC**
 - [Overview](/ftc/)
+- [Familiarizing Yourself](/ftc/familiarizing)
 - [Controlling a Motor]()
 **FRC**
 - [Overview](/frc/)

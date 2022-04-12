@@ -2,7 +2,7 @@
 
 This documentation contains sections for both FTC and FRC alongside explanations for advanced robot control concepts. 
 
-!> It's important that you understand how different utility classes work before using them. Having a strong knowledge of control concepts before using their classes will avoid any confusion or issues further down the line.
+!> It's important that you understand how different SHPLib/WPILib classes work before using them. Having a strong understanding of control concepts before using their respective classes will avoid any confusion or issues further down the line.
 
 ## FTC
 
@@ -28,3 +28,7 @@ Head over to the [FRC Overview](/frc/) to get acclimated with [WPILib](https://d
 ## Advanced Concepts
 
 This section contains explanations for different advanced concepts used both in FTC and FRC alongside their implementations in SHPLib. Most beginner programmers in FTC should attempt to learn some of these concepts and use them for their robot. These concepts are essential for a competitive FRC robot.
+
+## Credit and Inspiration
+
+This documentation is made by Ayaan Govil (Class of 2023) and is heavily inspired by the [WPILib Documentation](https://docs.wpilib.org/en/stable/index.html). 
