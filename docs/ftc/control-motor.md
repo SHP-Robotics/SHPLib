@@ -7,8 +7,6 @@ To start controlling a motor, lets create a new `Test` subsystem in the `subsyst
 ```java
 public class Test extends Subsystem {
 
-    
-
     public Test(HardwareMap hardwareMap) {
 
     }
