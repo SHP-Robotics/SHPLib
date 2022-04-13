@@ -10,11 +10,6 @@ public class Test extends Subsystem {
     public Test(HardwareMap hardwareMap) {
 
     }
-
-    @Override
-    public void periodic(Telemetry telemetry) {
-
-    }
 }
 ```
 
@@ -39,5 +34,22 @@ public void setPower(double power) {
     motor.setPower(power);
 }
 ```
+
+Your class should now look like this.
+
+```java
+public class Test extends Subsystem {
+    private final DcMotorEx motor;
+
+    public Test(HardwareMap hardwareMap) {
+        motor = hardwareMap.get(DcMotorEx.class, "test");
+    }
+
+    public void setPower(double power) {
+        motor.setPower(power);
+    }
+}
+```
+
 
 Thats all! You can now call the subsystem method in a TeleOp or [create a command](/ftc/create-command) and [add it to a `ButtonBinding`](/ftc/create-binding).
