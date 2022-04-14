@@ -1,17 +1,24 @@
-# Controlling a Motor
+# Creating a Subsystem
 
-To start controlling a motor, lets create a new `Test` subsystem in the `subsystems` package.
+To make a simple subsystem that controls a motor, create a new `TestSubsystem` class in the `subsystems` package and extend the `Subsystem` class.
 
-![Create Class](../assets/createclass.png)
+![Create Subsystem Class](../assets/createclasssubsystem.png)
 
 ```java
-public class Test extends Subsystem {
+public class TestSubsystem extends Subsystem {
 
-    public Test(HardwareMap hardwareMap) {
+    public TestSubsystem(HardwareMap hardwareMap) {
+
+    }
+
+    @Override
+    public void periodic(Telemetry telemetry) {
 
     }
 }
 ```
+
+Although we're not going to use the `periodic` method, it's a good habit to override empty methods.
 
 To create the motor object, we will use the [DcMotorEx](http://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotorEx.html) interface. It's a good habit to declare devices using the `private` and `final` keywords unless they need to be mutated or accessed outside of the class.
 
@@ -22,7 +29,7 @@ private final DcMotorEx motor;
 In the constructor, we will use `hardwareMap` to initialize the object and specify the device name in the FTC Driver App configuration. Feel free to specify a different device name than `"test"`.
 
 ```java
-public Test(HardwareMap hardwareMap) {
+public TestSubsystem(HardwareMap hardwareMap) {
     motor = hardwareMap.get(DcMotorEx.class, "test");
 }
 ```
@@ -38,15 +45,20 @@ public void setPower(double power) {
 Your class should now look like this.
 
 ```java
-public class Test extends Subsystem {
+public class TestSubsystem extends Subsystem {
     private final DcMotorEx motor;
 
-    public Test(HardwareMap hardwareMap) {
+    public TestSubsystem(HardwareMap hardwareMap) {
         motor = hardwareMap.get(DcMotorEx.class, "test");
     }
 
     public void setPower(double power) {
         motor.setPower(power);
+    }
+
+    @Override
+    public void periodic(Telemetry telemetry) {
+
     }
 }
 ```

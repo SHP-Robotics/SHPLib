@@ -2,7 +2,7 @@
 **FTC**
 - [Overview](/ftc/)
 - [Familiarizing Yourself](/ftc/familiarizing)
-- [Controlling a Motor](/ftc/control-motor)
+- [Creating a Subsystem](/ftc/create-subsystem)
 - [Creating a Command](/ftc/create-command)
 - [Creating a ButtonBinding](/ftc/create-binding)
 **FRC**
