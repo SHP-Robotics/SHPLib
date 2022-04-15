@@ -10,7 +10,7 @@ PID controller stands for proportional-integral-derivative controller, a widely 
 
 The first term simply multiplies the gain by the error. For example, if your error is 100 and your gain is 0.005, your resulting output will be 50% power (0.5). If your gain is too high, your mechanism may start oscillating. If it's too low, your mechanism will never reach its setpoint. Because of the sensitive nature of the P term, it's imperative that you take time to carefully tune it.
 
-!> Some PID controllers, such as the built-in CTRE ones for FRC, multiply the gain by a base value before multiplying by the error. The SHPLib [PIDController]() class doesn't do this due to the varying resolution of different encoders in FTC.
+!> Some PID controllers, such as the built-in CTRE ones for FRC, integrate a base value into their calculations, requiring the gains to be larger. The SHPLib [PIDController]() class doesn't do this due to the varying resolution of different encoders in FTC.
 
 ### I (Integral) Term
 
