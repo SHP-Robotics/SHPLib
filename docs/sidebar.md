@@ -11,5 +11,5 @@
 **Advanced Concepts**
 - [Overview](/advanced-concepts/)
 - [Control Systems](/advanced-concepts/control-systems)
+- [Computer Vision](/advanced-concepts/computer-vision)
 - [Kinematics]()
-- [Computer Vision]()

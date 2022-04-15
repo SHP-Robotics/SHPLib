@@ -4,7 +4,9 @@
 
 PID controller stands for proportional-integral-derivative controller, a widely used control loop that utilizes feedback in a combination of three different terms to calculate the power needed to reach a given setpoint. All three terms must be individually tuned through trial and error, but most applications don't require all the terms; some only need a P or PD controller. If you don't want to use a term, set its gain to 0.
 
-![PID Diagram](../assets/piddiagram.png)
+<p align="center">
+  <img src="../assets/piddiagram.png" />
+</p>
 
 ### P (Proportional) Term
 
@@ -14,7 +16,7 @@ The first term simply multiplies the gain by the error. For example, if your err
 
 ### I (Integral) Term
 
-The second term takes the error from previous iterations and integrates them over time. The I term can be used if your mechanism never quite reaches the setpoint, however, you should only do so if changing your P term or adding a feedforward doesn't help. A recommended value to start with for your I gain is 1/100th of the P gain.
+The second term takes the error from previous iterations and integrates them over time. The I term can be used if your mechanism never quite reaches the setpoint. However, you should only do so if changing your P term or adding a feedforward doesn't help. A recommended value to start with for your I gain is 1/100th of the P gain.
 
 ?> Drivetrain PID controllers may benefit from having an I term if your robot is overshooting the distance setpoint.
 
@@ -24,7 +26,7 @@ The third term estimates the trend of the error based on it's rate of change and
 
 ### F (Feedforward) Term
 
-The last term is a static value that gets added to your output. An F term is helpful to counteract forces like gravity or friction. However, for velocity-dependent mechanisms like drivetrains, it's recommended that you tune a [feedforward controller](/advanced-concepts/control-systems?id=feedforward-control) and add it to the output instead of adding an F term.
+The last term is a static value that gets added to your output. An F term can help counteract forces like gravity or friction. However, for velocity-dependent mechanisms like drivetrains, it's recommended that you tune a [feedforward controller](/advanced-concepts/control-systems?id=feedforward-control) and add it to the output instead of adding an F term.
 
 !> The SHPLib [PIDController]() class does not have the F term included because it's a simple static value that can be added to your output. The F term can be added outside of the PID controller in your `setPower` method call.
 
@@ -35,3 +37,5 @@ The last term is a static value that gets added to your output. An F term is hel
 ## Profiled PID Controller
 
 ## Bang Bang Controller
+
+## State-Space Control

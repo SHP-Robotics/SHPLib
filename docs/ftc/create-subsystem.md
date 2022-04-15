@@ -2,7 +2,9 @@
 
 To make a simple subsystem that controls a motor, create a new `TestSubsystem` class in the `subsystems` package and extend the `Subsystem` class.
 
-![Create Subsystem Class](../assets/createclasssubsystem.png)
+<p align="center">
+  <img src="../assets/createclasssubsystem.png" />
+</p>
 
 ```java
 public class TestSubsystem extends Subsystem {

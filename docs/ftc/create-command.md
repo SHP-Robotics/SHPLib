@@ -2,7 +2,9 @@
 
 To start, let's create a new `TestCommand` class in the `commands` package and extend the `Command` class. We'll also be using the `TestSubsystem` class from the [previous example](/ftc/control-motor).
 
-![Create Command Class](../assets/createclasscommand.png)
+<p align="center">
+  <img src="../assets/createclasscommand.png" />
+</p>
 
 ```java
 public class TestCommand extends Command {
