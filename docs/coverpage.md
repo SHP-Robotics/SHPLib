@@ -2,8 +2,7 @@
 
 > FTC/FRC guides and SHPLib documentation
 
-- Guides, explanations, and more
-- In-house FTC library
-- Command-based programming and advanced robot control
+- In-house FTC Library
+- Guides and Concept Explanations
 
 [Get Started](#main)

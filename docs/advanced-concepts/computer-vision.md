@@ -20,13 +20,23 @@ Classic CV models are faster and more consistent than ML-based models, but lack 
 
 ### Color Filtering and Contour Detection
 
+Color filtering and contour detection is commonly used in FRC, but can also be used in FTC. Color filtering involves thresholding and changing the color of the image to make it easier to see targets. Contour detection takes the contours of the image and identifies the targets by a user-specified threshold. By combining these two, you can consistently identify color-specific targets. 
+
 <p align="center">
   <img src="../assets/contour.png" />
 </p>
 
+Because of potential background noise from similar colors, FRC uses retroreflective targets with directed LEDs from the camera. Although this method is effective indoors, it's pretty annoying to work with outdoors and completely blinds anyone looking at the camera.
+
 <p align="center">
   <img src="https://docs.limelightvision.io/en/latest/_images/CS_aim_limelight_mounted.JPG" />
 </p>
+
+<p align="center">
+  <img src="https://images.takeshape.io/fd194db7-7b25-4b5a-8cc7-da7f31fab475/dev/7ea0ed82-78b4-4d1e-9333-0d230e28677f/ReflectionRetroreflection.png?w=1200&q=80" />
+</p>
+
+Although color filtering and contour detection isn't very common in FTC, it's still possible to use it. You can leverage the [OpenCV library](https://opencv.org/) to perform your own color filtering and contour detection to detect custom game pieces or cargo.
 
 ### AprilTag Detection
 
