@@ -18,7 +18,7 @@ This documentation contains everything from setting power to a motor to utilizin
 
 > **What is FRC?**
 
-FRC stands for *FIRST Robotics Challenge*, a larger-scale robotics challenge designed for highschool students. FRC provides an industry-level robotics experience and uses [WPILib](https://docs.wpilib.org/en/stable/index.html) as the primary library for programming robots in Java or C++ . FRC is <mark>very expensive</mark> to participate in, so it's crucial that you recognize it as a significant commitment and challenge yourself to learn and try new things.
+FRC stands for *FIRST Robotics Challenge*, a larger-scale robotics challenge designed for highschool students. FRC provides an industry-level robotics experience and uses [WPILib](https://docs.wpilib.org/en/stable/index.html) as the primary library for programming robots in Java or C++ . Participating in FRC is a privilege, so it's crucial that you recognize it as a significant commitment and challenge yourself to learn and try new things.
 
 
 > **I'm new to FRC programming, where do I get started?**
