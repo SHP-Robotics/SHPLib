@@ -4,7 +4,7 @@
   "description": "FRC/FTC guides and SHPLib documentation.",
   "scripts": {
     "build": "npm i",
-    "start": "docsify serve"
+    "start": "cd docs && docsify serve"
   },
   "repository": {
     "type": "git",
