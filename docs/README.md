@@ -31,4 +31,4 @@ This section contains explanations for different advanced concepts used both in 
 
 ## Credit and Inspiration
 
-This documentation is made by Ayaan Govil (Class of 2023) and is heavily inspired by the [WPILib Documentation](https://docs.wpilib.org/en/stable/index.html). 
+This documentation was made by Ayaan Govil (Class of 2023) and is heavily inspired by the [WPILib Documentation](https://docs.wpilib.org/en/stable/index.html). 

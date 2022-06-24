@@ -20,9 +20,11 @@ public class TestSubsystem extends Subsystem {
 }
 ```
 
+?> The `periodic` method is called on every loop.
+
 Although we're not going to use the `periodic` method, it's a good habit to override empty methods.
 
-To create the motor object, we will use the [DcMotorEx](http://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotorEx.html) interface. It's a good habit to declare devices using the `private` and `final` keywords unless they need to be mutated or accessed outside of the class.
+To create the motor object, we will use the [DcMotorEx](http://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotorEx.html) interface. It's a good habit to declare devices using the `private` and `final` keywords unless they need to be reassigned or accessed outside of the class.
 
 ```java
 private final DcMotorEx motor;
