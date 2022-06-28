@@ -3,6 +3,7 @@
 - [Overview](/robot-design/)
 - [Subsystems](/robot-design/subsystems)
 - [State Machines](/robot-design/state-machines)
+- [Commands](/robot-design/commands)
 **FTC**
 - [Overview](/ftc/)
 - [Familiarizing Yourself](/ftc/familiarizing)
