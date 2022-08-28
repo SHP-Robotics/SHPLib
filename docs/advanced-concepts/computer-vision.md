@@ -2,7 +2,7 @@
 
 ## Machine Learning Approach
 
-In general, ML-based vision models take a lot of processing power and tend to be inconsistent if not trained properly. However, they are capable of detecting objects from various different perspectives and are helpful at detecting cargo.
+In general, ML-based vision models take a lot of processing power and tend to be inconsistent if not trained properly. However, they are capable of detecting objects from various different perspectives and are helpful for detecting cargo.
 
 ### Object Detection with TensorFlow Lite/Vuforia
 
