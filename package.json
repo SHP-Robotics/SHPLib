@@ -2,9 +2,13 @@
   "name": "shplib-docs",
   "version": "1.0.0",
   "description": "FRC/FTC guides and SHPLib documentation.",
+  "homepage": "https://shp-robotics.github.io/SHPLib/",
   "scripts": {
+    
+    "start": "cd docs && docsify serve",
     "build": "npm i",
-    "start": "cd docs && docsify serve"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -13,6 +17,7 @@
   "author": "Ayaan Govil",
   "license": "GPL-3.0",
   "dependencies": {
-    "docsify-cli": "^4.4.4"
+    "docsify-cli": "^4.4.4",
+    "gh-pages": "^6.0.0"
   }
 }
